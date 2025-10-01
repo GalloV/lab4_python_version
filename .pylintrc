@@ -1,0 +1,22 @@
+[MASTER]
+# Set the Python path to include the src directory
+init-hook='import sys; sys.path.append("src")'
+
+[MESSAGES CONTROL]
+# Disable some overly strict warnings for this demo project
+disable=
+    missing-module-docstring,
+    too-few-public-methods,
+    line-too-long
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=100
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_,a,b
+
+[DESIGN]
+# Minimum number of public methods for a class
+min-public-methods=1
