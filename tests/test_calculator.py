@@ -1,7 +1,8 @@
-from calculator import Calculator
 import unittest
 import sys
 import os
+from calculator import Calculator
+
 
 # Add src directory to path so we can import calculator
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
