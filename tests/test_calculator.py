@@ -1,6 +1,4 @@
-"""
-Unit tests for the Calculator class.
-"""
+from calculator import Calculator
 import unittest
 import sys
 import os
@@ -8,7 +6,6 @@ import os
 # Add src directory to path so we can import calculator
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from calculator import Calculator
 
 
 class TestCalculator(unittest.TestCase):
@@ -56,4 +53,5 @@ class TestCalculator(unittest.TestCase):
 
 
 if __name__ == "__main__":
+
     unittest.main()
