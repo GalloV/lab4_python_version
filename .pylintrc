@@ -7,7 +7,7 @@ init-hook='import sys; sys.path.append("src")'
 disable=
     missing-module-docstring,
     too-few-public-methods,
-    line-too-long
+    line-too-long,
     trailing-whitespace
 
 [FORMAT]
