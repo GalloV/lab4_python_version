@@ -35,8 +35,11 @@ jobs:
           pip install -r requirements-dev.txt
       
       - name: Run Pylint
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
-          pylint --init-hook="import sys; sys.path.append('src')" src/ tests/
+          python -c "import sys; print(sys.path)"
+          pylint src/ tests/
 
   test:
     name: Test (Python ${{ matrix.python-version }} on ${{ matrix.os }})
