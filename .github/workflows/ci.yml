@@ -36,6 +36,7 @@ jobs:
       
       - name: Run Pylint
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
           pylint src/ tests/
 
   test:
