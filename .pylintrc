@@ -8,6 +8,7 @@ disable=
     missing-module-docstring,
     too-few-public-methods,
     line-too-long
+    trailing-whitespace
 
 [FORMAT]
 # Maximum number of characters on a single line
