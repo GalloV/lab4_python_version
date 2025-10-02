@@ -1,16 +1,9 @@
 """
 Unit tests for the Calculator class.
 """
-from pathlib import Path
+
 import unittest
-import sys
-from calculator import Calculator
-
-
-# Add src directory to Python path so we can import calculator
-# This works for both local testing and CI
-src_dir = Path(__file__).resolve().parent.parent / "src"
-sys.path.insert(0, str(src_dir))
+from calculator import Calculator  # Import is handled by conftest.py
 
 
 class TestCalculator(unittest.TestCase):
