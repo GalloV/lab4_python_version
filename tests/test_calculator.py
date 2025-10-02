@@ -1,10 +1,17 @@
+"""
+Unit tests for the Calculator class.
+"""
+from pathlib import Path
 import unittest
 import sys
-import os
-from src.calculator import Calculator
+from calculator import Calculator
 
-# Add src directory to path so we can import calculator
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+# Add src directory to Python path so we can import calculator
+# This works for both local testing and CI
+src_dir = Path(__file__).resolve().parent.parent / "src"
+sys.path.insert(0, str(src_dir))
+
 
 class TestCalculator(unittest.TestCase):
     """Test cases for Calculator class."""
